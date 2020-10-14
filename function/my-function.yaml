@@ -1,0 +1,12 @@
+---
+apiVersion: serverless.kyma-project.io/v1alpha1
+kind: Function
+metadata:
+  name: first-function
+  namespace: default
+spec:
+  runtime: python38
+  source: |-
+    def main(event, context):
+        return "hello world"
+
